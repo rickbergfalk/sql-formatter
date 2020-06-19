@@ -132,7 +132,8 @@ export default class Tokenizer {
     }
 
     getNextToken(input, previousToken) {
-        return this.getWhitespaceToken(input) ||
+        return this.getSeparatorToken(input) ||
+            this.getWhitespaceToken(input) ||
             this.getCommentToken(input) ||
             this.getStringToken(input) ||
             this.getOpenParenToken(input) ||
@@ -142,6 +143,14 @@ export default class Tokenizer {
             this.getReservedWordToken(input, previousToken) ||
             this.getWordToken(input) ||
             this.getOperatorToken(input);
+    }
+
+    getSeparatorToken(input) {
+        return this.getTokenOnFirstMatch({
+            input,
+            type: tokenTypes.OPERATOR,
+            regex: /^(\\g)/,
+        });
     }
 
     getWhitespaceToken(input) {

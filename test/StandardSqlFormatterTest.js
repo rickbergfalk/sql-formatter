@@ -391,4 +391,10 @@ describe("StandardSqlFormatter", function() {
     it("formats lonely semicolon", function() {
         expect(sqlFormatter.format(";")).toBe(";");
     });
+
+    it("formats \\g appropriately", function() {
+        expect(sqlFormatter.format("SELECT \\g something;")).toBe(
+            "SELECT\n  \\g something;"
+        );
+    });
 });
