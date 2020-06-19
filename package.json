@@ -1,5 +1,5 @@
 {
-  "name": "sql-formatter",
+  "name": "@rickbergfalk/sql-formatter",
   "version": "2.3.3",
   "description": "Formats whitespaces in a SQL query to make it more readable",
   "license": "MIT",
@@ -34,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeroturnaround/sql-formatter.git"
+    "url": "https://github.com/rickbergfalk/sql-formatter.git"
   },
   "bugs": {
-    "url": "https://github.com/zeroturnaround/sql-formatter/issues"
+    "url": "https://github.com/rickbergfalk/sql-formatter/issues"
   },
   "dependencies": {
     "lodash": "^4.16.0"
