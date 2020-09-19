@@ -40,7 +40,7 @@
     "url": "https://github.com/rickbergfalk/sql-formatter/issues"
   },
   "dependencies": {
-    "lodash": "^4.16.0"
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
@@ -58,9 +58,9 @@
     "cross-env": "^3.1.3",
     "eslint": "^3.7.1",
     "eslint-config-zt": "^1.3.0",
-    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-react": "^7.20.6",
     "jest": "^17.0.2",
-    "rimraf": "^2.3.4",
+    "rimraf": "^3.0.2",
     "webpack": "^1.13.1"
   },
   "jest": {
